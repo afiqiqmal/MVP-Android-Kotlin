@@ -52,13 +52,14 @@ class FirebaseNotificationService : FirebaseMessagingService() {
             if (intent != null) {
                 val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT)
 
+                val NOTIFICATION_CHANNEL_ID = "my_channel_id_01"
+
                 val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
-                val notificationBuilder = NotificationCompat.Builder(this)
+                val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setContentTitle(remoteMessage.data["title"])
                         .setContentText(body)
                         .setAutoCancel(true)
-                        .setPriority(Notification.PRIORITY_HIGH)
                         .setSound(defaultSoundUri)
                         .setContentIntent(pendingIntent)
 

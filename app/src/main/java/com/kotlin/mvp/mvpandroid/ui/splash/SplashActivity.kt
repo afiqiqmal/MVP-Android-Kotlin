@@ -33,14 +33,14 @@ class SplashActivity : BaseActivity(), SplashConnector {
     @BindView(R.id.refresh)
     lateinit var refresh: Button
 
-    lateinit var tokenBroadcastReceiver: BroadcastReceiver
+    private lateinit var tokenBroadcastReceiver: BroadcastReceiver
     internal var version: String? = null
 
     @Inject
     lateinit var mPresenter: SplashPresenter
 
-    var isTimerFinished = false
-    var isTokenFinished = false
+    private var isTimerFinished = false
+    private var isTokenFinished = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

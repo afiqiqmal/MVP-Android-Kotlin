@@ -47,7 +47,7 @@ open class BaseActivity : AppCompatActivity() {
     lateinit var rxPermissions: RxPermissionHelper
 
     val appComponent: AppComponent
-        get() = MVPApplication.daggerAppComponent(this)
+        get() = MVPApplication.daggerAppComponent(this)!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

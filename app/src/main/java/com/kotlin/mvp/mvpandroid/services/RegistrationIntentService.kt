@@ -20,7 +20,7 @@ class RegistrationIntentService : IntentService(TAG) {
 
     override fun onCreate() {
         super.onCreate()
-        MVPApplication.daggerAppComponent(this).serviceComponent(ServiceModule(this)).inject(this)
+        MVPApplication.daggerAppComponent(this)!!.serviceComponent(ServiceModule(this)).inject(this)
     }
 
     override fun onHandleIntent(intent: Intent?) {
