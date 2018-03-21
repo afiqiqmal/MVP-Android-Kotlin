@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="weekday_s">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </array>
+
+    <array name="leave_type">
+        <item>Annual Leave</item>
+        <item>Emergency Leave</item>
+        <item>Medical Leave</item>
+        <item>Unpaid Leave</item>
+    </array>
+    <array name="leave_type_code">
+        <item>AL</item>
+        <item>EL</item>
+        <item>MC</item>
+        <item>UP</item>
+    </array>
+
+    <array name="leave_mode">
+        <item>Full Day</item>
+        <item>Half Day</item>
+    </array>
+    <array name="leave_mode_code">
+        <item>FD</item>
+        <item>HD</item>
+    </array>
+
+    <array name="leave_hd">
+        <item>Half Day Morning</item>
+        <item>Half Day Afternoon</item>
+    </array>
+    <array name="leave_hd_code">
+        <item>PG</item>
+        <item>PT</item>
+    </array>
+</resources>

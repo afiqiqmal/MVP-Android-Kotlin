@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="design_fab_image_size" tools:override="true">24dp</dimen>
+
+    <dimen name="font_medium">12sp</dimen>
+    <dimen name="elevation">4dp</dimen>
+
+    <dimen name="bottom_navigation_text_size_active">10dp</dimen>
+    <dimen name="bottom_navigation_text_size_inactive">10dp</dimen>
+
+</resources>

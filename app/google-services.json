@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "67887629997",
+    "firebase_url": "https://pidm-49330.firebaseio.com",
+    "project_id": "pidm-49330",
+    "storage_bucket": "pidm-49330.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67887629997:android:d781e8eb6cbf9d0e",
+        "android_client_info": {
+          "package_name": "com.kotlin.mvp.mvpandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67887629997-rrl2aomn2drdscng4g63ep7rsbar2lej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZkfhAMzsteD_mvpgBG_EIq5GpF3jqLTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67887629997:android:ae451d22689039b5",
+        "android_client_info": {
+          "package_name": "com.kotlin.mvp.mvpandroid.mock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67887629997-rrl2aomn2drdscng4g63ep7rsbar2lej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZkfhAMzsteD_mvpgBG_EIq5GpF3jqLTo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

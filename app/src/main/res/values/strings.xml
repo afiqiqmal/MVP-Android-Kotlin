@@ -1,0 +1,94 @@
+<resources>
+
+    <string name="splash_retry">Retry</string>
+
+    <string name="login_title">Login</string>
+    <string name="login_button_auth_text">Login with Username</string>
+    <string name="login_button_google">Login with Google Account</string>
+    <string name="login_forgot_password"><u>Forgot Password?</u></string>
+    <string name="login_email_address_hint">Email Address</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_failed_text">Login Failed</string>
+    <string name="login_button_reset_password">Reset Password</string>
+
+
+    <string name="scanner_provider_alert">Wrong provider. Make sure you have correct QRCode</string>
+    <string name="scanner_invalid">QRCode is invalid</string>
+    <string name="scanner_verified">Application Verified.. Please Wait</string>
+
+
+    <string name="attendance_sign_in_text">Sign In</string>
+    <string name="attendance_sign_out_text">Sign Out</string>
+    <string name="attendance_reason_hint_text">What are you doing in here?</string>
+    <string name="attendance_sign_out_early_text">Why are you leaving early?</string>
+
+
+
+    <string name="attend_sync_location_text">Syncing Current Location…</string>
+    <string name="attend_sync_location_failed">Unable to get current location. Retrying…</string>
+    <string name="attend_sync_location_geocode">Finding Location Name…</string>
+    <string name="attend_geocode_not_available">No Location Available</string>
+    <string name="attend_geocode_failed">Address Failed. Retrying....</string>
+    <string name="attend_button_sign_in_remotely">Sign In Remotely</string>
+    <string name="attend_button_enable_gps">Click Here to Enable GPS</string>
+    <string name="attend_sign_in_big_title">Sign In</string>
+    <string name="attend_clock_placeholder_text">00:00 AM</string>
+    <string name="attend_date_placeholder_text">31 Dec 2017</string>
+    <string name="attend_sign_out">Sign Out</string>
+    <string name="attend_sign_out_title">You’ve Signed In</string>
+
+
+    <string name="leave_pending_no_text">No Pending Leave Listed</string>
+    <string name="leave_reject_no_text">No Rejected Leave Listed</string>
+    <string name="leave_approve_no_text">No Approved Leave Listed</string>
+    <string name="leave_default_no_text">No Leaves Listed</string>
+    <string name="leave_item_duration_text">Duration</string>
+    <string name="leave_item_date_text">Leave Date</string>
+    <string name="leave_header_balance_leave_text">Balance Leave</string>
+    <string name="leave_header_applied_text">Applied Leave</string>
+    <string name="leave_header_maximum_leave_text">Maximum Leave</string>
+    <string name="leave_error_date_text">Please Check Your Leave Dates</string>
+    <string name="leave_error_reason_text">Please State Your Reason</string>
+    <string name="leave_error_attachment_text">Attachment is Needed</string>
+    <string name="leave_error_type_text">Wrong Leave Type</string>
+    <string name="leave_start_date_text">Start Date</string>
+    <string name="leave_calendar_setup">Setup Calender…</string>
+    <string name="leave_calendar_setup_failed">Calender Failed</string>
+    <string name="leave_calendar_setup_error">Unable to setup calendar</string>
+
+
+
+    <string name="book_item_available_text">Available</string>
+    <string name="book_item_not_available_text">Not Available</string>
+    <string name="book_item_no_car_text">No Car Available</string>
+    <string name="book_item_no_room_text">No Meeting Room Available</string>
+    <string name="book_item_btn_show_list">Book List</string>
+    <string name="book_item_status_title_text">Status</string>
+    <string name="book_item_fuel_title_text">Fuel</string>
+    <string name="book_title_car_text">Book Car</string>
+    <string name="book_title_room_text">Book Meeting Room</string>
+    <string name="book_form_failed">Booking Failed. Please try again</string>
+    <string name="book_error_reason_text">Please Specify Reason</string>
+    <string name="book_error_dates_text">Please Select Dates</string>
+    <string name="book_start_date_text">Start Date</string>
+    <string name="book_calendar_setup">Setup Calender…</string>
+    <string name="book_calendar_setup_failed">Calender Failed</string>
+    <string name="book_calendar_setup_error">Unable to setup calendar</string>
+
+
+
+    <string name="task_item_btn_reply">Reply</string>
+    <string name="task_text_no_task_today">You haven’t post a task today</string>
+
+
+
+    <string name="user_text_email_title">Email</string>
+    <string name="user_text_phone_title">Phone Number</string>
+    <string name="user_text_ic_no_title">Ic / Passport No</string>
+    <string name="user_text_address_title">Address</string>
+    <string name="user_text_service_start_title">Service Start</string>
+    <string name="user_text_service_end_title">Service End</string>
+    <string name="user_text_pin_number_title">Pin Number</string>
+
+
+</resources>

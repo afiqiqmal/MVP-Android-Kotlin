@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/md_white_1000</item>
+        <item name="colorAccent">@color/md_white_1000</item>
+        <item name="colorControlNormal">@color/md_white_1000</item>
+        <item name="android:statusBarColor">@color/pidm_blue_light</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorPrimary">@color/blue</item>
+        <item name="android:colorAccent">@color/pidm_blue_light</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="FontBold">
+        <item name="fontPath">@string/font_bold</item>
+    </style>
+
+    <style name="FontBoldButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="fontPath">@string/font_bold</item>
+    </style>
+
+    <style name="FontRegular">
+        <item name="fontPath">@string/font_regular</item>
+    </style>
+
+    <style name="FontMedium">
+        <item name="fontPath">@string/font_medium</item>
+    </style>
+
+    <style name="FontThin">
+        <item name="fontPath">@string/font_thin</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/blackie</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_down</item>
+        <item name="android:windowExitAnimation">@anim/slide_up</item>
+    </style>
+
+    <style name="DialogAnimationFromDown">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_up</item>
+    </style>
+
+    <style name="CustomDayTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/blackie</item>
+        <item name="fontPath">@string/font_medium</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="fontPath">@string/font_bold</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="fontPath">@string/font_bold</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@color/pidm_dark</item>
+        <item name="buttonBarPositiveButtonStyle">@color/pidm_dark</item>
+    </style>
+
+</resources>

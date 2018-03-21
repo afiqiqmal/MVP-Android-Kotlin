@@ -1,0 +1,86 @@
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':app-client')
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Android Support
+    implementation libraries.design
+    implementation libraries.cardView
+    implementation libraries.appCompat
+    implementation libraries.supportV4
+    implementation libraries.gridView
+    implementation libraries.transition
+
+    //Butterknife
+    implementation libraries.butterknife
+    kapt libraries.butterknifeCompiler
+
+    // Google Play
+    implementation libraries.googleMap
+    implementation libraries.googleLocation
+    implementation libraries.googlePlace
+    implementation libraries.googlePlus
+
+    // Json
+    implementation libraries.googleGson
+
+    //Crashlytics
+    implementation (libraries.fabric){
+        transitive = true
+    }
+
+    // Firebase
+    implementation libraries.firebaseCore
+    implementation libraries.firebaseAnalytic
+    implementation libraries.firebasegcm
+
+    // Dagger
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+    compileOnly libraries.javaAnnotations
+
+    // RxAndroid
+    implementation libraries.rxAndroid
+
+    //Image Rendering
+    implementation libraries.glide
+    kapt libraries.glideAnnotation
+
+    //Rx Permission
+    implementation libraries.rxpermission
+
+    //Font
+    implementation (libraries.caligraphy) {
+        exclude group: 'com.android.support'
+        transitive = false
+    }
+
+    //ImagePicker
+    implementation ('com.mlsdev.rximagepicker:library:2.0.2') {
+        exclude group: 'com.android.support'
+    }
+
+    //RxLocation
+    implementation ('pl.charmas.android:android-reactive-location2:2.0@aar') {
+        ['com.android.support', 'io.reactivex.rxjava2'].each{
+            exclude group: it
+        }
+    }
+
+    //sharedpref
+    implementation ('com.github.afiqiqmal:SharedChamber-Kotlin:2.5.1') {
+        ['com.google.code.gson', 'org.jetbrains.kotlin'].each{
+            exclude group: it
+        }
+    }
+
+    // Animate Anywhere
+    implementation ('com.andkulikov:transitionseverywhere:1.7.8') {
+        exclude group: 'com.android.support'
+    }
+}

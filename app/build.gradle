@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'io.fabric'
+apply from : 'dependencies.gradle'
+apply from : 'signing.gradle'
+apply from : 'function.gradle'
+
+def versionMajor = 1
+def versionMinor = 0
+def versionPatch = 0
+def versionFix = 0
+
+def sumVersionCode = versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionFix * 10
+
+def appName = "PIDM"
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    flavorDimensions "default"
+
+    defaultConfig {
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode sumVersionCode
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}.${versionFix}"
+
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+    }
+
+    buildTypes.each{
+        it.resValue "string", "google_maps_key", getGoogleApi()
+        it.buildConfigField 'String','URL_API',getEncryptKey(getApi())
+        it.buildConfigField 'String','CLIENT_SERVICE',getEncryptKey(getClientService())
+        it.buildConfigField 'String','SECRET_KEY',getEncryptKey(getClientSecretKey())
+        it.buildConfigField 'String','X_POWERED_BY',getEncryptKey(getClientPowerByHeader())
+        it.buildConfigField 'String','BEPUNCT', '"'+appName+'"'
+    }
+
+    buildTypes {
+
+        debug {
+            testCoverageEnabled true
+            versionNameSuffix "-staging"
+            minifyEnabled false
+            debuggable true
+        }
+
+        release {
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = appName+"-" + variant.versionName + "-" + variant.productFlavors[0].name + "-" + variant.buildType.name + "-" + getDateTime() + ".apk"
+        }
+    }
+
+    variantFilter { variant ->
+        if (variant.buildType.name == 'release' && variant.getFlavors().get(0).name == 'mock') {
+            variant.setIgnore(true)
+        }
+    }
+
+
+    productFlavors {
+        mock {
+            dimension "default"
+            applicationId rootProject.packageNameMock
+        }
+        prod {
+            dimension "default"
+            applicationId rootProject.packageName
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    kapt {
+        generateStubs = true
+    }
+
+}
+apply plugin: 'com.google.gms.google-services'
