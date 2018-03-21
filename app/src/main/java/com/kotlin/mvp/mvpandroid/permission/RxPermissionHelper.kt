@@ -4,8 +4,8 @@ import android.annotation.TargetApi
 import android.app.AlertDialog
 import android.content.Context
 import android.os.Build
-import com.tbruyelle.rxpermissions2.RxPermissions
 import com.kotlin.mvp.mvpandroid.R
+import com.tbruyelle.rxpermissions2.RxPermissions
 
 /**
  * @author : hafiq on 28/07/2017.

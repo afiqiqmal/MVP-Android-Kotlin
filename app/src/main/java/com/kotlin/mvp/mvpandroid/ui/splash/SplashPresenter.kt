@@ -7,13 +7,13 @@ import android.content.Intent
 import android.content.IntentFilter
 import com.java.mvp.factory.entity.request.TokenRequest
 import com.java.mvp.factory.entity.response.TokenResponse
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
 import com.kotlin.mvp.mvpandroid.internal.activity.PerActivity
 import com.kotlin.mvp.mvpandroid.prefs.PreferencesRepository
 import com.kotlin.mvp.mvpandroid.services.RegistrationIntentService
 import com.kotlin.mvp.mvpandroid.ui.common.mvp.BasePresenter
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 

@@ -1,7 +1,6 @@
 package com.kotlin.mvp.mvpandroid.internal
 
 
-import dagger.Component
 import com.kotlin.mvp.mvpandroid.internal.activity.ActivityComponent
 import com.kotlin.mvp.mvpandroid.internal.activity.ActivityModule
 import com.kotlin.mvp.mvpandroid.internal.fragment.FragmentComponent
@@ -12,6 +11,7 @@ import com.kotlin.mvp.mvpandroid.internal.service.ServiceComponent
 import com.kotlin.mvp.mvpandroid.internal.service.ServiceModule
 import com.kotlin.mvp.mvpandroid.permission.RxPermissionModule
 import com.kotlin.mvp.mvpandroid.prefs.PreferenceModule
+import dagger.Component
 import javax.inject.Singleton
 
 /**

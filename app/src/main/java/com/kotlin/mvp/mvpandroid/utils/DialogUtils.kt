@@ -4,10 +4,10 @@ import android.Manifest
 import android.app.AlertDialog
 import android.content.Context
 import android.support.annotation.RequiresPermission
-import com.mlsdev.rximagepicker.RxImagePicker
-import com.mlsdev.rximagepicker.Sources
 import com.kotlin.mvp.mvpandroid.R
 import com.kotlin.mvp.mvpandroid.listener.DialogPositionClickCallback
+import com.mlsdev.rximagepicker.RxImagePicker
+import com.mlsdev.rximagepicker.Sources
 
 /**
 * @author by hafiq on 13/12/2017.

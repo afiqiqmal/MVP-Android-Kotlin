@@ -4,9 +4,9 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonDeserializer
 import com.java.mvp.factory.internal.RestApi
+import com.kotlin.mvp.mvpandroid.prefs.PreferencesRepository
 import dagger.Module
 import dagger.Provides
-import com.kotlin.mvp.mvpandroid.prefs.PreferencesRepository
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

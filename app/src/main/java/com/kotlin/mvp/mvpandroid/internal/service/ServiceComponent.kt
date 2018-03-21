@@ -1,8 +1,8 @@
 package com.kotlin.mvp.mvpandroid.internal.service
 
 
-import dagger.Subcomponent
 import com.kotlin.mvp.mvpandroid.services.RegistrationIntentService
+import dagger.Subcomponent
 
 
 /**

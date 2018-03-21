@@ -11,13 +11,13 @@ import butterknife.BindView
 import butterknife.OnClick
 import com.java.mvp.factory.entity.request.TokenRequest
 import com.java.mvp.factory.entity.response.TokenResponse
-import io.reactivex.Observable
 import com.kotlin.mvp.mvpandroid.R
 import com.kotlin.mvp.mvpandroid.analytics.Screen
 import com.kotlin.mvp.mvpandroid.ui.MainActivity
 import com.kotlin.mvp.mvpandroid.ui.common.BaseActivity
 import com.kotlin.mvp.mvpandroid.utils.CommonUtils
 import com.kotlin.mvp.mvpandroid.utils.DeviceUtils
+import io.reactivex.Observable
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 

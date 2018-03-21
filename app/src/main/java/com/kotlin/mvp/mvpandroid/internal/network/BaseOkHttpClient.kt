@@ -4,10 +4,10 @@ import android.content.Context
 import com.java.mvp.factory.internal.Constant.CONNECTTIMEOUT
 import com.java.mvp.factory.internal.Constant.READTIMEOUT
 import com.java.mvp.factory.internal.Constant.WRITETIMEOUT
-import dagger.Module
-import dagger.Provides
 import com.kotlin.mvp.mvpandroid.BuildConfig
 import com.kotlin.mvp.mvpandroid.prefs.PreferencesRepository
+import dagger.Module
+import dagger.Provides
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

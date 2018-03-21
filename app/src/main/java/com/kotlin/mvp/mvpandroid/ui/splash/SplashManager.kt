@@ -3,8 +3,8 @@ package com.kotlin.mvp.mvpandroid.ui.splash
 import com.java.mvp.factory.entity.request.TokenRequest
 import com.java.mvp.factory.entity.response.TokenResponse
 import com.java.mvp.factory.internal.RestApi
-import io.reactivex.Observable
 import com.kotlin.mvp.mvpandroid.ui.common.mvp.BaseManager
+import io.reactivex.Observable
 import javax.inject.Inject
 import javax.inject.Singleton
 

@@ -13,8 +13,8 @@ import android.graphics.Paint
 import android.util.DisplayMetrics
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
-import io.reactivex.annotations.NonNull
 import com.kotlin.mvp.mvpandroid.R
+import io.reactivex.annotations.NonNull
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*

@@ -6,9 +6,6 @@ import android.support.annotation.LayoutRes
 import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 import butterknife.ButterKnife
-import com.tbruyelle.rxpermissions2.RxPermissions
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.disposables.Disposable
 import com.kotlin.mvp.mvpandroid.MVPApplication
 import com.kotlin.mvp.mvpandroid.analytics.AnalyticHelper
 import com.kotlin.mvp.mvpandroid.internal.AppComponent
@@ -19,6 +16,9 @@ import com.kotlin.mvp.mvpandroid.prefs.PreferencesRepository
 import com.kotlin.mvp.mvpandroid.utils.DeviceUtils
 import com.kotlin.mvp.mvpandroid.utils.ErrorUtils
 import com.kotlin.mvp.mvpandroid.utils.TypeFaceUtils
+import com.tbruyelle.rxpermissions2.RxPermissions
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.disposables.Disposable
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 import javax.inject.Inject
 
