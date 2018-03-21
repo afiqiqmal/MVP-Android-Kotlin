@@ -18,7 +18,7 @@ Just a simple mvp for kotlin android
 11. Dexter (Permission)<br>
 12. Calligraphy<br>
 13. EzyLogger<br>
-14. ConcealSharedPreferences<br>
+14. SharedChamber<br>
 
 
 This project already setup firebase analytics. just replace the <b>google-service.json</b> with your json file.
